@@ -45,3 +45,22 @@ body {
     margin: 0.5em auto;
 }
 
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .intro-text > h1 {
+        font-size: 2em;
+    }
+
+    .intro-content {
+        margin: 0;
+    }
+}
+    
+
