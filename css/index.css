@@ -64,7 +64,7 @@ body {
 .grid-container {
     display: grid; 
     /* display: grid; */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
     margin: 53px 53px 0 53px;
 }
@@ -145,6 +145,10 @@ footer > p {
     /* .nav-list {
         display: none;
     } */
+
+    .grid-container {
+        margin: 53px 15px 0 15px;
+    }
 
     .hero-content {
         position: absolute;
