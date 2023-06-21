@@ -1,0 +1,56 @@
+<p class="recent">Recent posts</p>
+<div class="card-wrapper">
+    <div class="card card1">
+        <a href="blog.html" target="_blank">
+            <img class="card-img" src="images/blog-image-1.png" alt="blog">
+        </a>
+        <p class="card-date">Jun 20, 2023</p>
+        <h4 class="card-title">How I Started Learning Frontend Development</h4>
+        <p class="card-subtitle">Frontend development is an exciting and dynamic field 
+            that allows you to create beautiful and interactive websites. 
+            However, getting started can be overwhelming with the vast amount of resources
+             and technologies available.</p>
+    </div>
+    <div class="card card2">
+        <a href="blog.html" target="_blank">
+            <img class="card-img" src="images/blog-image-2.png" alt="blog">
+        </a>
+        <p class="card-date">May 5, 2023</p>
+        <h4 class="card-title">The Main Challenges of Learning React</h4>
+        <p class="card-subtitle">React is a popular JavaScript library used for building user interfaces.
+            With its component-based architecture and efficient rendering, 
+            React has become a go-to choice for many frontend developers.</p>
+    </div>
+    <div class="card card3">
+        <a href="blog.html" target="_blank">
+            <img class="card-img" src="images/blog-image-3.png" alt="blog">
+        </a>
+        <p class="card-date">Apr 20, 2023</p>
+        <h4 class="card-title">Learning Javascript Objects</h4>
+        <p class="card-subtitle">avascript is a powerful and flexible programming language 
+            that is widely used in web development. 
+            One of its key features is its ability to work with objects, 
+            which are data structures that allow you to store and manipulate data.</p>
+    </div>
+</div>
+<style>
+    .recent {
+    text-align: center;
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #333;
+}
+    .card-wrapper {
+    display: grid; 
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px auto; 
+    }   
+
+    .card-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+</style>

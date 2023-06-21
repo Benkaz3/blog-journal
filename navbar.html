@@ -1,0 +1,70 @@
+<header class="top-nav">
+    <div class="logo-group">
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="logo">
+        </a>
+        <h3 class="logo-text">My Learning Journal</h3>
+    </div>
+    <div class="menu">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">About me</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<style>
+    .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: auto 53px; 
+    }
+
+    .logo-group {
+        display: flex; 
+        align-items: center;
+        gap: 5px; 
+    }
+
+    .logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .nav-item > a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .nav-item > a:hover {
+        color: #7b7676;
+    }
+
+    .nav-item > a.active {
+        color: #7b7b7b;
+    }
+</style>

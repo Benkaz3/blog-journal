@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+   
+</head>
+<body>
+    <div class="container">
+    <nav></nav>
+        <div class="blog">
+            <p class="blog-date indent">Mar 11, 2023</p>
+            <h4 class="blog-title indent">How to Check for Palindrome - Javascript.</h4>
+            <p class="blog-subtitle indent">A palindrome is a word, phrase, number, 
+                or other sequence of characters that reads the same forward and backward. 
+                Examples of palindromes include "racecar", "level", "deified", and "madam". In this blog post, 
+                we will explore how to check for palindrome in Javascript using different approaches.</p>
+            <img class="blog-img" src="images/blog-image-5.png" alt="blog">
+            <h4 class="heading indent">Approach 1: Reverse and Compare</h4>
+            <p class="paragraph indent">One simple approach to check for palindrome is to reverse the string 
+                and compare it to the original string. If the reversed string is the same as the original string, 
+                then the string is a palindrome. 
+                Here is an example of how to implement this approach:</p>
+                <code class="indent">
+                    function isPalindrome(str) {
+                        var reversedStr = str.split('').reverse().join('');
+                        return str === reversedStr;
+                      }
+                </code>
+            <p class="paragraph indent">This function takes a string as input, splits it into an array of characters, reverses the array, 
+                and joins the characters back into a string. 
+                It then compares the reversed string to the original string 
+                and returns true if they are the same.</p>
+            <h4 class="heading indent">Approach 2: Compare Characters</h4>
+            <p class="paragraph indent">Another approach to check for palindrome is to compare the characters 
+                from the beginning and end of the string. 
+                If the characters match, move on to the next pair of characters. 
+                If the characters do not match, the string is not a palindrome. 
+                Here is an example of how to implement this approach:</p>
+                <code class="indent">
+                    function isPalindrome(str) {
+                        var len = str.length;
+                        for (var i = 0; i &lt len / 2; i++) {
+                          if (str[i] !== str[len - 1 - i]) {
+                            return false;
+                          }
+                        }
+                        return true;
+                      }   
+                </code>
+            <p class="paragraph indent">This function takes a string as input and iterates through the characters 
+                from the beginning and end of the string. It compares each pair of characters 
+                and returns false if they do not match. 
+                If all pairs of characters match, the function returns true.
+            </p>
+            <h4 class="heading indent">Conclusion</h4>
+            <p class="paragraph indent">Checking for palindrome in Javascript is a common programming
+                problem that can be solved using different approaches. 
+                By understanding how to reverse and compare strings and how to compare characters, 
+                you can implement efficient and effective palindrome checking functions. 
+                Remember to practice and experiment with different approaches 
+                to become proficient in solving programming problems. 
+                Good luck on your coding journey!</p>
+            <div id="recent-posts"></div>
+        </div>
+    </div>
+        
+    <footer></footer>
+</body>
+</html>
