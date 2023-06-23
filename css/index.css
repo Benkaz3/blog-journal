@@ -25,7 +25,8 @@ body {
     position: relative;
     overflow: hidden;
 }
-
+/* add an overlay using :after to darken the image,
+hence improve readability of the hero text */
 .hero:after {
     content: "";
     position: absolute;
