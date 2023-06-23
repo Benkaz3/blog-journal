@@ -12,3 +12,4 @@ $.get("footer.html", function(data){
 $.get("recent-posts.html", function(data){
     $("#recent-posts").replaceWith(data);
 });
+
